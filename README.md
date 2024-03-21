@@ -1,7 +1,10 @@
 
-# Workout Master
+# Workout Mentor
 
-Workout Master is a full-stack web application designed to help users track their workouts effectively. Built with React for the frontend, Node.js and Express for the backend, and MongoDB for the database, Workout Master offers a seamless experience for users to manage their fitness routines.
+Workout Mentor is a full-stack web application designed to help users track their workouts effectively. Built with React for the frontend, Node.js and Express for the backend, and MongoDB for the database, Workout Master offers a seamless experience for users to manage their fitness routines.
+
+![Landing Page](https://github.com/arkaslittlemind/MERN-Tracker/assets/73486782/c4fbce1b-c305-43da-a767-7be35527d8e9)
+
 
 ## Features
 
@@ -17,7 +20,7 @@ Workout Master is a full-stack web application designed to help users track thei
 
 ## Installation
 
-To run Workout Master locally, follow these steps:
+To run Workout Mentor locally, follow these steps:
 
 1. Clone the repository:
 
@@ -46,7 +49,6 @@ PORT=3001
 MONGODB_URI=your_mongodb_uri
 
 ```
-
 Replace `your_mongodb_uri` with your MongoDB connection string.
 
 5. Start the development server:
@@ -67,10 +69,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 
 ## Contributing
 
-Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests to help improve Workout Master.
-
-
-
+Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests to help improve Workout Mentor.
 ---
 
 © 2024 Workout Master. Built with ❤️ by [Arkadipta Mojumder](https://github.com/arkaslittlemind).
