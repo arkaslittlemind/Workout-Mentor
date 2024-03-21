@@ -9,7 +9,7 @@ Workout Mentor is a full-stack web application designed to help users track thei
 ## Features
 
 - **User Authentication:** Secure user authentication system allowing users to sign up, log in, and manage their accounts.
-- **Workout Tracking:** Users can create, update, and delete their workouts, including exercises, sets, reps, and weights.
+- **Workout Tracking:** Users can create, update, and delete their workouts, including exercise title, reps, and weights.
 
 ## Technologies Used
 
@@ -25,7 +25,7 @@ To run Workout Mentor locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/arkaslittlemind/MERN-Tracker.git
+git clone https://github.com/arkaslittlemind/Workout-Mentor.git
 ```
 
 3. Install dependencies for both frontend and backend:
