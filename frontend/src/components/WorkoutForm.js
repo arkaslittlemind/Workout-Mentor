@@ -9,6 +9,7 @@ const WorkoutForm = () => {
   const [reps, setReps] = useState("");
   // eslint-disable-next-line
   const [error, setError] = useState(null);
+  const [emptyFields, setEmptyFields] = useState([]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,12 +27,16 @@ const WorkoutForm = () => {
 
     if (!response.ok) {
       setError(json.error);
+      setEmptyFields(json.emptyFields);
     }
+
+
     if (response.ok) {
       setTitle("");
       setLoad("");
       setReps("");
       setError(null);
+      setEmptyFields([]);
       console.log("Workout added successfully:", json);
       dispatch({ type: "CREATE_WORKOUT", payload: json });
     }
@@ -45,19 +50,25 @@ const WorkoutForm = () => {
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
+        className={emptyFields.includes('title') ? 'error' : ''}
       />
+
       <label>Load (in kg): </label>
       <input
         type="number"
         value={load}
         onChange={(e) => setLoad(e.target.value)}
+        className={emptyFields.includes('load') ? 'error' : ''}
       />
+
       <label>Number of Reps: </label>
       <input
         type="number"
         value={reps}
         onChange={(e) => setReps(e.target.value)}
+        className={emptyFields.includes('reps') ? 'error' : ''}
       />
+      
       <button type="submit">Add Workout</button>
       {error && <div className="error">{error}</div>}
     </form>
